@@ -28,7 +28,7 @@
 
 class Converter {
   func convert(_ number: Int) -> String {
-    return if number == 1 ? "I" : "II"
+    return number == 1 ? "I" : "II"
   }
   
 }
