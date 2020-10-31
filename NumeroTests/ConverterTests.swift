@@ -29,7 +29,7 @@
 import XCTest
 @testable import Numero
 
-class ConverterTests: SCTestCase {
+class ConverterTests: XCTestCase {
     var converter: Converter!
     
     override func setUp() {
@@ -37,9 +37,9 @@ class ConverterTests: SCTestCase {
         converter = Converter()
     }
     
-    override func tearSown() {
+    override func tearDown() {
         converter = nil
-        super.teatDown()
+        super.tearDown()
     }
     
     func testConversionForOne() {
